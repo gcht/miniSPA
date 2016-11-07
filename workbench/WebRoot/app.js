@@ -1,3 +1,31 @@
+//The following code structure is mandatory
+var home = {};            //default partial page, which will be loaded initially
+home.partial = "lib/home.html";
+home.init = function(){   //bootstrap method
+    //nothing but static content only to render
+}
+
+var notfound = {};               //404 page
+notfound.partial = "lib/404.html";
+notfound.init = function(){
+    alert('URL does not exist. please check your code. You may also try manually inputing some other invalid url to get here.');
+}
+
+var settings = {};               //global parameters
+settings.partialCache = {};      //cache for partial pages
+settings.divDemo = document.getElementById("demo");      //div for loading partials
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+
+
 //The following is customizable, and consistent to the templates used
 var postMD = {};
 postMD.partial = "postMD.html";
